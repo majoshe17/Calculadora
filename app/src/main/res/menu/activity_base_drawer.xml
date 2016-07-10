@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/activity_ranking"
+        android:title="Ranking" />
+
+    <item
+        android:id="@+id/activity_reproductor"
+        android:title="Reproductor" />
+
+    <item
+        android:id="@+id/activity_memorama"
+        android:title="Memorama" />
+
+    <item
+        android:id="@+id/calculadora"
+        android:title="Calculadora" />
+
+    <item
+        android:id="@+id/settings"
+        android:title="Settings" />
+
+
+
+
+
+</menu>
+

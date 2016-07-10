@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/inicio"
+            android:layout_gravity="center_horizontal"
+            android:textSize="90dp"
+            android:id="@+id/pantalla" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <GridLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:columnCount="4"
+        android:rowCount="6">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/nueve"
+            android:text="9"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:background="@color/colorWhite"
+            android:textColor="@color/colorTool"
+            android:textSize="50dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ocho"
+            android:text="8"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:background="@color/colorWhite"
+            android:textColor="@color/colorTool"
+            android:textSize="50dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/siete"
+            android:text="7"
+            android:layout_column="2"
+            android:layout_row="0"
+            android:background="@color/colorWhite"
+            android:textColor="@color/colorTool"
+            android:textSize="50dp"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/suma"
+            android:text="+"
+            android:layout_column="3"
+            android:layout_row="0"
+            android:background="@color/colorWhite"
+            android:textColor="@color/colorTool"
+            android:textSize="50dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cuatro"
+            android:text="4"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:background="@color/colorWhite"
+            android:textColor="@color/colorTool"
+            android:textSize="50dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cinco"
+            android:text="5"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:background="@color/colorWhite"
+            android:textColor="@color/colorTool"
+            android:textSize="50dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seis"
+            android:text="6"
+            android:layout_column="2"
+            android:layout_row="1"
+            android:background="@color/colorWhite"
+            android:textColor="@color/colorTool"
+            android:textSize="50dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/resta"
+            android:text="-"
+            android:layout_column="3"
+            android:layout_row="1"
+            android:background="@color/colorWhite"
+            android:textColor="@color/colorTool"
+            android:textSize="50dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/tres"
+            android:text="3"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:background="@color/colorWhite"
+            android:textColor="@color/colorTool"
+            android:textSize="50dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/dos"
+            android:text="2"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:background="@color/colorWhite"
+            android:textColor="@color/colorTool"
+            android:textSize="50dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/multiplica"
+            android:text="x"
+            android:layout_column="3"
+            android:layout_row="2"
+            android:background="@color/colorWhite"
+            android:textColor="@color/colorTool"
+            android:textSize="50dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/uno"
+            android:text="1"
+            android:layout_column="2"
+            android:layout_row="2"
+            android:background="@color/colorWhite"
+            android:textColor="@color/colorTool"
+            android:textSize="50dp"/>
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/borra"
+            android:text="c"
+            android:layout_column="1"
+            android:layout_row="4"
+            android:background="@color/colorWhite"
+            android:textColor="@color/colorTool"
+            android:textSize="50dp"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/resulta"
+            android:text="="
+            android:layout_column="1"
+
+            android:layout_row="5"
+
+            android:background="@color/colorWhite"
+            android:textColor="@color/colorTool"
+            android:textSize="50dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/divide"
+            android:text="/"
+            android:layout_column="3"
+            android:layout_row="4"
+            android:background="@color/colorWhite"
+            android:textColor="@color/colorTool"
+            android:textSize="50dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/cero"
+            android:text="0"
+            android:layout_column="0"
+            android:layout_row="4"
+            android:background="@color/colorWhite"
+            android:textColor="@color/colorTool"
+            android:textSize="50dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/llama"
+            android:text="ll"
+            android:layout_column="0"
+            android:layout_row="5"
+            android:background="@color/colorWhite"
+            android:textColor="@color/colorTool"
+            android:textSize="50dp"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/punto"
+            android:text="."
+            android:layout_column="2"
+            android:layout_row="4"
+            android:background="@color/colorWhite"
+            android:textColor="@color/colorTool"
+            android:textSize="50dp"/>
+
+
+        </GridLayout>
+
+</LinearLayout>
+
+
+
+
+</LinearLayout>

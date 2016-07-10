@@ -1,0 +1,80 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.com.example.joshesalamea.calculadora">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:permission="">
+
+        <activity
+            android:name=".ActivityRanking"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity android:name=".ReproductorActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+        android:name=".MemoramaActivity"
+        android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".CalculatorActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".RegistroUsuario"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+
+        </activity>
+
+
+        <activity
+            android:name=".BaseActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+        </activity>
+
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+        </activity>
+
+
+
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+        </activity>
+
+
+
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="ed40ca56ffd5df8de501460015c8ecf59c9a3780" />
+    </application>
+
+</manifest>
