@@ -30,12 +30,12 @@ public class AplicacionDBHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         sqLiteDatabase.execSQL("CREATE TABLE "+PUNTUACIONES_TABLE+" (id INTEGER PRIMARY KEY AUTOINCREMENT, usuario TEXT, puntuacion INTEGER)");
-        sqLiteDatabase.execSQL("INSERT INTO "+PUNTUACIONES_TABLE+" (usuario, puntuacion) VALUES('jugador1','15'), ('jugador2', '30'), ('jugador3','8')");
+        //sqLiteDatabase.execSQL("INSERT INTO "+PUNTUACIONES_TABLE+" (usuario, puntuacion) VALUES('jugador1','15'), ('jugador2', '30'), ('jugador3','8')");
 
 
         sqLiteDatabase.execSQL("CREATE TABLE "+USUARIOS_TABLE+" (id INTEGER PRIMARY KEY AUTOINCREMENT, usuario TEXT, password TEXT, nombre TEXT, correo TEXT, telefono TEXT, direccion TEXT)");
-        sqLiteDatabase.execSQL("INSERT INTO "+USUARIOS_TABLE+" (usuario, password, nombre, telefono, correo, direccion) " +
-                                                                "VALUES('jose','jose','jose','9090','sdaas@asda' ,'calle')");
+        //sqLiteDatabase.execSQL("INSERT INTO "+USUARIOS_TABLE+" (usuario, password, nombre, telefono, correo, direccion) " +
+        //                                                        "VALUES('jose','jose','jose','9090','sdaas@asda' ,'calle')");
     }
 
 
@@ -70,11 +70,23 @@ public class AplicacionDBHelper extends SQLiteOpenHelper {
 
     }
 
+    public Cursor getPuntuaciones() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        String[] columns = {"puntuacion"};
 
 
-
-
-
+        //String[] where = {id};
+        Cursor c = db.query(
+                PUNTUACIONES_TABLE,          // The table to query
+                columns,            // The columns to return
+                null,               // The columns for the WHERE clause
+                null,               // The values for the WHERE clause
+                null,               // don't group the rows
+                null,               // don't filter by row groups
+                null                // The sort order
+        );
+        return c;
+    }
 
 
 
